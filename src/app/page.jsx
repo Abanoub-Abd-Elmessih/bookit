@@ -1,12 +1,13 @@
 import { Heading, RoomCard } from "@/components";
-import rooms from "@/data/rooms.json";
 import React from "react";
+import getAllRooms from "./actions/getAllRooms";
 
-const Home = () => {
+export default async function Home() {
+  const rooms = await getAllRooms();
   return (
     <>
       <Heading title={"Available Rooms"} />
-      {rooms.length > 0 ? (
+      {Array.isArray(rooms) && rooms.length > 0 ? (
         rooms.map((room, index) => (
           <React.Fragment key={index}>
             <RoomCard room={room} />
@@ -17,5 +18,4 @@ const Home = () => {
       )}
     </>
   );
-};
-export default Home;
+}

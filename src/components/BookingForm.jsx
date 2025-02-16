@@ -6,7 +6,7 @@ export const BookingForm = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
             <label
-              htmlfor="check_in_date"
+              htmlFor="check_in_date"
               className="block text-sm font-medium text-gray-700"
             >
               Check-In Date
@@ -21,7 +21,7 @@ export const BookingForm = () => {
           </div>
           <div>
             <label
-              htmlfor="check_in_time"
+              htmlFor="check_in_time"
               className="block text-sm font-medium text-gray-700"
             >
               Check-In Time
@@ -36,7 +36,7 @@ export const BookingForm = () => {
           </div>
           <div>
             <label
-              htmlfor="check_out_date"
+              htmlFor="check_out_date"
               className="block text-sm font-medium text-gray-700"
             >
               Check-Out Date
@@ -51,7 +51,7 @@ export const BookingForm = () => {
           </div>
           <div>
             <label
-              htmlfor="check_out_time"
+              htmlFor="check_out_time"
               className="block text-sm font-medium text-gray-700"
             >
               Check-Out Time
